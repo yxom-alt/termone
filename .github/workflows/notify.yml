@@ -11,5 +11,5 @@ jobs:
          fetch-depth: 1
 
      - run: |
-       chmod a+x gradlew
-       ./gradlew tasks
+         chmod a+x gradlew
+         ./gradlew tasks
