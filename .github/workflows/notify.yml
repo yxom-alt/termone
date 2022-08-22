@@ -1,0 +1,15 @@
+name: CI notify
+
+on: workflow_dispatch
+
+jobs:
+  more-info:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v3
+       with:
+         fetch-depth: 1
+
+     - run: |
+       chmod a+x gradlew
+       ./gradlew tasks
