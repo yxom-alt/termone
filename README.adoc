@@ -11,4 +11,4 @@ It emulates a reasonably large subset of Digital Equipment Corporation VT-100 te
 Supported terminal types include *vt100*, *screen* (default), *linux* and *xterm*.
 As result console programs like *ssh* (PKIX-SSH), *vi* (unix visual editor), *emacs*, *mc* (Midnight Commander file manager), *nano* (Nano's ANOther editor), and other work smoothly.
 
-Code of "TermOne Plus" is hosted in https://gitlab.com/termapps/termoneplus[public repository].
+Forked from https://gitlab.com/termapps/termoneplus[public repository].
