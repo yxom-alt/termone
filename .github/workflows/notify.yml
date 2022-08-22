@@ -9,7 +9,19 @@ jobs:
      - uses: actions/checkout@v3
        with:
          fetch-depth: 1
+         
+     - uses: actions/setup-java@v3
+       with:
+         java-version: '18'
+         distribution: 'temurin'
+         cache: 'gradle'
 
-     - run: |
+     - name: show tasks
+       run: |
          chmod a+x gradlew
          ./gradlew tasks
+
+     - name: build
+       run: |
+         ./gradlew build
+         find . -type f | egrep '.*\.(xapk|a(ab|pks?))$'
